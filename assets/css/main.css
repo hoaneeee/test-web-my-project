@@ -28,6 +28,9 @@
     display: block;
 }
 
+.header__navbar-item--has-notify:hover .header__notify {
+    display: block;
+}
 
 .header__navbar-icon--link:hover,
 .header__navbar-item:hover,
@@ -129,7 +132,32 @@
     right: 0;
     border: 1px solid #d3d3d3;
     border-radius: 5px;
+    transform-origin: 90% top;
+    animation: headernotifygrowth ease-in 0.4s;
+    display: none;
 }
+
+.header__notify::before {
+    content: "";
+    border-width: 20px 30px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    right: 0;
+    top: -27px;
+    position: absolute;
+
+}
+
+@keyframes headernotifygrowth {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
 
 .header__notify-header {
     height: 40px;
@@ -142,7 +170,7 @@
     color: #666;
     margin: 0 0 0 12px;
     line-height: 40px;
-
+    cursor: default;
 }
 
 .header__notify-list {
@@ -205,4 +233,89 @@
     padding: 4px 10px;
     font-weight: 400;
     font-size: 1.35rem;
+}
+
+/* header signup and login */
+.modal{
+    display: none;
+}
+.authen-form {
+    width: 500px;
+    display: none;
+}
+
+.authen-form__container {
+    padding: 0 32px;
+}
+
+.authen-form__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.authen-form__login {
+    font-size: 1.5rem;
+    ;
+    font-weight: 400;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.authen-form__switch-btn {
+    font-size: 1.5rem;
+    color: red;
+    cursor: pointer;
+}
+
+
+
+.authen-form__input {
+    height: 40px;
+    width: 100%;
+    margin-top: 16px;
+
+}
+
+.authen-form__policy {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: black;
+}
+
+.authen-form__policy-red {
+    color: red;
+    text-decoration: none;
+}
+
+.authen-form__back-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 80px;
+    
+}
+
+.authen-form_social{
+    height: 50px;
+    /* padding: 0 32px; */
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+    align-items: center ;
+    background-color: rgba(128,128,128,0.2)
+   
+}
+.authen-form_social-icon{
+    font-size: 1.8rem;
+}
+
+.authen-form_social-facebook{
+    color: var(--white-color);
+    background-color: blue;
+}
+.authen-form_social-google{
+    background-color: var(--white-color);
+}
+.authen-form__social-title{
+    margin: 0 23px;
 }

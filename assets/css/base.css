@@ -37,3 +37,53 @@ html{
     }
     
 }
+/* modal */
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+}
+.modal__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+.modal__body{
+    background-color: var(--white-color);
+    margin: auto;
+    z-index: 1;
+    border-radius: 5px;
+}
+/* button */
+.btn{
+    min-width: 120px;
+    height: 35px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8px;
+}
+.btn:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.btn.btn--primary{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+.btn--size-s{
+    height: 32px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    
+}

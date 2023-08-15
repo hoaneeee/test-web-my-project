@@ -14,13 +14,18 @@
 </head>
 
 <body>
+    <script src="./assets/main.js"></script>
+
+    <Script>
+        
+    </Script>
     <div class="app">
         <header class="header">
             <div class="grid">
                 <nav class="header__navbar">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item header__navbar-qr--item-has-qr header__navbar-item--separate">vào
-                            cửa hàng để mua trên ứng dụng
+                            cửa hàng để mua trên ứng dung
                             <!-- header qr code -->
                             <div class="header__qr">
                                 <img src="./assets/img/qrcode.png" alt="Qr code" class="header__qr-img">
@@ -48,11 +53,11 @@
                         </li>
                     </ul>
                     <ul class="header__navbar-list">
-                        <li class="header__navbar-item">
+                        <li class="header__navbar-item header__navbar-item--has-notify">
                             <a href="" class="header__navbar-item--link">
                                 <i class="header__navbar-icon fa-solid fa-bell"></i>
                                 thông báo
-                            </a> 
+                            </a>
                             <!-- notify header -->
                             <div class="header__notify">
                                 <header class="header__notify-header">
@@ -65,7 +70,8 @@
                                                 alt="" class="header__notify-img">
                                             <div class="header__notify-body">
                                                 <span class="header__notify-name">
-                                                    mỹ phẩm ohui chính hãng
+                                                    mỹ phẩm ohui chính hãng đã được kiểm chứng và xác thực bởi chuyên
+                                                    gia
                                                 </span>
                                                 <span class="header__notify-describe">
                                                     mô tả sản phẩm mỹ phẩm ohui chính hãng
@@ -118,7 +124,7 @@
                                 </ul>
                                 <footer class="header__notify-footer">
                                     <a href="" class="header__notify-footer--btn">
-                                        xem tất cả 
+                                        xem tất cả
                                     </a>
                                 </footer>
                             </div>
@@ -143,6 +149,62 @@
         <footer class="footer">
 
         </footer>
+        <!-- modal -->
+        <div class="modal">
+            <div class="modal__overlay">
+
+            </div>
+            <div class="modal__body">
+                <div class="modal__inner">
+                    <!-- authen form -->
+                    <div class="authen-form">
+                        <div class="authen-form__container">
+
+                            <div class="authen-form__header">
+                                <h3 class="authen-form__login">Đăng kí</h3>
+                                <span class="authen-form__switch-btn"> đăng nhập </span>
+                            </div>
+
+                            <div class="authen-form__form">
+                                <div class="authen-form__group">
+                                    <input type="text" class="authen-form__input"
+                                        placeholder="Nhập email/số điện thoại của bạn ">
+                                </div>
+                                <div class="authen-form__group">
+                                    <input type="password" class="authen-form__input" placeholder="nhập mật khẩu  ">
+                                </div>
+                                <div class="authen-form__group">
+                                    <input type="password" class="authen-form__input" placeholder="nhập lại mật khẩu  ">
+                                </div>
+                                <div class="authen-form__add">
+                                    <p class="authen-form__policy">
+                                        bằng việc đăng kí , bạn phải đồng ý với Ohui về <a href=""
+                                            class="authen-form__policy-red">
+                                            điều khoản dịch vụ
+                                        </a> & <a href="" class="authen-form__policy-red"> chính sách bảo mật</a>
+                                    </p>
+                                </div>
+                                <div class="authen-form__back-btn">
+                                    <button class="btn">trở lại </button>
+                                    <button class="btn btn--primary ">đăng kí </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="authen-form_social">
+                            <a href="" class="authen-form_social-facebook btn btn--size-s btn--with-icon">
+                                <i class="authen-form_social-icon fa-brands fa-square-facebook"></i>
+                                <span class="authen-form__social-title">kết nối với facebook</span>
+                            </a>
+                            <a href="" class="authen-form_social-google btn btn--size-s btn--with-icon">
+                                <i class="authen-form_social-icon fa-brands fa-google-plus-g"></i>
+                                <span class="authen-form__social-title"> kết nối với google</span>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
